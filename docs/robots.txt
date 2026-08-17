@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wdewees1.github.io/autoincome-blog/sitemap.xml
