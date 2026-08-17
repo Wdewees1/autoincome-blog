@@ -9,9 +9,9 @@ import sys
 import subprocess
 from pathlib import Path
 
-BASE_DIR = Path("/opt/data/autoincome-blog")
+BASE_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_DIR = BASE_DIR / "output"
-GH_BIN = os.path.expanduser("~/.local/bin/gh")
+GH_BIN = shutil.which("gh") or os.path.expanduser("~/.local/bin/gh")
 
 def run(cmd, check=True, capture=False):
     """Run a shell command."""

@@ -12,7 +12,7 @@ import html
 import datetime
 from pathlib import Path
 
-BASE_DIR = Path("/opt/data/autoincome-blog")
+BASE_DIR = Path(__file__).resolve().parent
 POSTS_DIR = BASE_DIR / "posts"
 OUTPUT_DIR = BASE_DIR / "output"
 STATIC_DIR = BASE_DIR / "static"
@@ -109,7 +109,8 @@ def md_to_html(text):
                 close_lists()
                 html_lines.append("<ol>")
                 in_ol = True
-            html_lines.append(f"<li>{inline_md(re.sub(r'^\d+\. ', '', stripped))}</li>")
+            cleaned = re.sub(r'^\d+\. ', '', stripped)
+            html_lines.append(f"<li>{inline_md(cleaned)}</li>")
         else:
             close_lists()
             if not in_paragraph:
