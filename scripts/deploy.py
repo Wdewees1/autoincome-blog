@@ -27,13 +27,7 @@ def run(cmd, check=True, capture=False):
     return result
 
 def main():
-    git_remote = os.environ.get("GIT_REMOTE_URL", "")
-
-    if not git_remote:
-        print("❌ No GIT_REMOTE_URL set.")
-        print("   Run: export GIT_REMOTE_URL='https://github.com/YOUR_USERNAME/autoincome-blog.git'")
-        print("   Then re-run this script.")
-        sys.exit(1)
+    git_remote = "https://github.com/Wdewees1/autoincome-blog.git"
 
     # Set git identity if not set
     run("git config user.name 'AI Tools Daily' || true", check=False)
@@ -52,6 +46,14 @@ def main():
     print("🔨 Building site...")
     run("python3 build_site.py")
 
+    # Copy output to docs/ for GitHub Pages (serves from /docs folder)
+    print("📋 Copying output to docs/...")
+    import shutil
+    docs_dir = BASE_DIR / "docs"
+    if docs_dir.exists():
+        shutil.rmtree(docs_dir)
+    shutil.copytree(OUTPUT_DIR, docs_dir)
+
     # Stage everything
     print("📦 Staging files...")
     run("git add -A")
@@ -62,12 +64,15 @@ def main():
 
     # Push
     print("🚀 Pushing to GitHub...")
-    run("git push -u origin main --force")
+    run("git push -u origin main")
+
+    # Trigger Pages rebuild
+    print("🔄 Triggering Pages rebuild...")
+    run("gh api -X POST repos/Wdewees1/autoincome-blog/pages/builds || true", check=False)
 
     print()
     print("✅ Deploy complete!")
-    print(f"   Your site will be live at the GitHub Pages URL you configured.")
-    print(f"   (Settings → Pages in your repo)")
+    print("   Site: https://wdewees1.github.io/autoincome-blog/")
 
 
 if __name__ == "__main__":
