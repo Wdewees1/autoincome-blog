@@ -2,53 +2,55 @@
 """
 AutoIncome Blog — Git Deploy Script
 Builds the site and pushes to GitHub for GitHub Pages deployment.
+
+Requires GITHUB_TOKEN environment variable to be set.
 """
 
 import os
 import sys
+import shutil
 import subprocess
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 OUTPUT_DIR = BASE_DIR / "output"
-GH_BIN = shutil.which("gh") or os.path.expanduser("~/.local/bin/gh")
 
-def run(cmd, check=True, capture=False):
+
+def run(cmd, check=True):
     """Run a shell command."""
     print(f"  $ {cmd}")
-    env = os.environ.copy()
-    env["PATH"] = os.path.expanduser("~/.local/bin:") + env.get("PATH", "")
-    result = subprocess.run(cmd, shell=True, capture_output=capture, text=True, env=env, cwd=str(BASE_DIR))
+    result = subprocess.run(cmd, shell=True, capture_output=True, text=True, cwd=str(BASE_DIR))
     if check and result.returncode != 0:
         print(f"  ❌ Error (exit {result.returncode})")
-        if capture:
-            print(result.stderr)
-        sys.exit(1)
-    return result
+        if result.stderr:
+            print(f"  {result.stderr.strip()}")
+        return False
+    return True
+
 
 def main():
-    git_remote = "https://github.com/Wdewees1/autoincome-blog.git"
+    token = os.environ.get("GITHUB_TOKEN", "")
+    if not token:
+        print("❌ GITHUB_TOKEN environment variable not set!")
+        sys.exit(1)
 
-    # Set git identity if not set
-    run("git config user.name 'AI Tools Daily' || true", check=False)
-    run("git config user.email 'aitoolsdaily@users.noreply.github.com' || true", check=False)
+    remote_url = f"https://Wdewees1:{token}@github.com/Wdewees1/autoincome-blog.git"
+    python_bin = sys.executable
 
-    # Init repo if needed
-    if not (BASE_DIR / ".git").exists():
-        run("git init")
-        run("git branch -M main")
+    # Set git identity
+    run('git config user.name "Wdewees1"', check=False)
+    run('git config user.email "317993808+wdewees1@users.noreply.github.com"', check=False)
 
-    # Add remote if not present
-    run(f"git remote remove origin 2>/dev/null || true", check=False)
-    run(f"git remote add origin {git_remote}")
+    # Set remote URL
+    run(f'git remote set-url origin "{remote_url}"', check=False)
+    run(f'git remote add origin "{remote_url}"', check=False)
 
     # Build the site
     print("🔨 Building site...")
-    run("python3 build_site.py")
+    run(f'"{python_bin}" build_site.py')
 
-    # Copy output to docs/ for GitHub Pages (serves from /docs folder)
+    # Copy output to docs/ for GitHub Pages
     print("📋 Copying output to docs/...")
-    import shutil
     docs_dir = BASE_DIR / "docs"
     if docs_dir.exists():
         shutil.rmtree(docs_dir)
@@ -60,19 +62,17 @@ def main():
 
     # Commit
     print("💾 Committing...")
-    run("git commit -m 'Auto-deploy: rebuild site with latest articles' || true", check=False)
+    run('git commit -m "Auto-deploy: rebuild site with latest articles"', check=False)
 
     # Push
     print("🚀 Pushing to GitHub...")
-    run("git push -u origin main")
-
-    # Trigger Pages rebuild
-    print("🔄 Triggering Pages rebuild...")
-    run("gh api -X POST repos/Wdewees1/autoincome-blog/pages/builds || true", check=False)
-
-    print()
-    print("✅ Deploy complete!")
-    print("   Site: https://wdewees1.github.io/autoincome-blog/")
+    if run("git push -u origin main"):
+        print()
+        print("✅ Deploy complete!")
+        print("   Site: https://wdewees1.github.io/autoincome-blog/")
+    else:
+        print()
+        print("❌ Push failed. Check errors above.")
 
 
 if __name__ == "__main__":
