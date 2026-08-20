@@ -230,6 +230,9 @@ def render_head(title, description, canonical="", extra=""):
     <link rel="alternate" type="application/rss+xml" title="{html.escape(CONFIG['site_name'])}" href="/autoincome-blog/feed.xml">
     <link rel="sitemap" type="application/xml" href="/autoincome-blog/sitemap.xml">
     {extra}
+    <!-- Analytics -->
+    <script data-goatcounter="https://aitoolsdaily.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
     <style>{get_css()}</style>
 </head>"""
 
