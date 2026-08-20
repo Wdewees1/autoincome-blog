@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://wdewees1.github.io/autoincome-blog/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://wdewees1.github.io/autoincome-blog/posts/ai-ai-safety-developments-what-it-means-for-your-business-in-2026.html</loc><lastmod>2026-08-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://wdewees1.github.io/autoincome-blog/posts/ai-regulation-updates-what-it-means-for-your-business-in-2026.html</loc><lastmod>2026-08-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://wdewees1.github.io/autoincome-blog/posts/top-5-ai-tools-for-project-management-in-2026.html</loc><lastmod>2026-08-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://wdewees1.github.io/autoincome-blog/posts/top-5-ai-tools-for-design-in-2026.html</loc><lastmod>2026-08-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -22,8 +23,8 @@
 <url><loc>https://wdewees1.github.io/autoincome-blog/posts/7-ai-prompt-engineering-tips-for-better-results.html</loc><lastmod>2026-08-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://wdewees1.github.io/autoincome-blog/posts/10-ai-tools-transform-workflow-2026.html</loc><lastmod>2026-08-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://wdewees1.github.io/autoincome-blog/category/legal.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
-<url><loc>https://wdewees1.github.io/autoincome-blog/category/news.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
-<url><loc>https://wdewees1.github.io/autoincome-blog/category/tutorials.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
-<url><loc>https://wdewees1.github.io/autoincome-blog/category/ai-tools.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://wdewees1.github.io/autoincome-blog/category/reviews.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+<url><loc>https://wdewees1.github.io/autoincome-blog/category/tutorials.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+<url><loc>https://wdewees1.github.io/autoincome-blog/category/news.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+<url><loc>https://wdewees1.github.io/autoincome-blog/category/ai-tools.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
 </urlset>
