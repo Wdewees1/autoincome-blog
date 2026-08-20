@@ -9,10 +9,10 @@
     "posts_per_page": 10,
     "footer_text": "© 2026 AI Tools Daily. All rights reserved.",
     "nav_links": [
-        {"label": "Home", "url": "/"},
-        {"label": "AI Tools", "url": "/category/ai-tools.html"},
-        {"label": "Tutorials", "url": "/category/tutorials.html"},
-        {"label": "Reviews", "url": "/category/reviews.html"},
-        {"label": "News", "url": "/category/news.html"}
+        {"label": "Home", "url": "/autoincome-blog/"},
+        {"label": "AI Tools", "url": "/autoincome-blog/category/ai-tools.html"},
+        {"label": "Tutorials", "url": "/autoincome-blog/category/tutorials.html"},
+        {"label": "Reviews", "url": "/autoincome-blog/category/reviews.html"},
+        {"label": "News", "url": "/autoincome-blog/category/news.html"}
     ]
 }
