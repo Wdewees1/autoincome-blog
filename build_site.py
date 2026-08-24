@@ -229,6 +229,8 @@ def render_head(title, description, canonical="", extra=""):
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="{html.escape(CONFIG['site_name'])}" href="/autoincome-blog/feed.xml">
     <link rel="sitemap" type="application/xml" href="/autoincome-blog/sitemap.xml">
+    <!-- Google Search Console verification -->
+    <meta name="google-site-verification" content="z5byM4gOawbJ9JXt36cq3WpVtEqecvNvAierEkCSgGU" />
     {extra}
     <!-- Analytics -->
     <script data-goatcounter="https://aitoolsdaily.goatcounter.com/count"
