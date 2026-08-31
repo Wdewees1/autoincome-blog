@@ -68,6 +68,15 @@ Zapier's AI features let you automate workflows across thousands of apps using n
 
 **Best for:** Workflow automation, app integration, productivity
 
+## Recommended Books for Going Deeper
+
+Want to go deeper on AI and productivity? Here are some highly-rated books:
+
+- [**AI for Beginners: A Simple Guide to Understanding Artificial Intelligence**](https://www.amazon.com/s?k=AI+for+beginners+book&tag=aitoolsdail03-20) — Perfect starting point for understanding AI fundamentals
+- [**The Productivity Project**](https://www.amazon.com/s?k=productivity+project+book&tag=aitoolsdail03-20) — Proven strategies for working smarter, not harder
+- [**Deep Work: Rules for Focused Success in a Distracted World**](https://www.amazon.com/s?k=deep+work+cal+newport&tag=aitoolsdail03-20) — Master the art of focus in the age of AI
+- [**Artificial Intelligence: A Guide for Beginners**](https://www.amazon.com/s?k=artificial+intelligence+guide+beginners&tag=aitoolsdail03-20) — Comprehensive AI overview for non-technical readers
+
 ## How to Choose the Right AI Tool
 
 When selecting an AI tool, consider these factors:
@@ -82,3 +91,7 @@ When selecting an AI tool, consider these factors:
 The right AI tools can save you hours every week. Start with one or two that address your biggest pain points, and gradually expand your toolkit. The key is consistent use—AI tools become more valuable as you learn to leverage them effectively.
 
 Remember: AI is a tool, not a replacement for human judgment. Use it to enhance your capabilities, not replace your expertise.
+
+---
+
+*As an Amazon Associate, I earn from qualifying purchases.*
