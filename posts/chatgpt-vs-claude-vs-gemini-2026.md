@@ -108,9 +108,9 @@ The AI assistant landscape has never been more competitive, which is great for u
 
 ### Recommended Reading:
 
-- [**ChatGPT for Business Book**](https://www.amazon.com/s?k=chatgpt+for+business+book&tag=aitoolsdail03-20) — Learn how to integrate ChatGPT into your workflow
-- [**AI for Beginners Book**](https://www.amazon.com/s?k=AI+for+beginners+book&tag=aitoolsdail03-20) — Understand how AI works in plain English
-- [**The AI Advantage Book**](https://www.amazon.com/s?k=artificial+intelligence+business+book+2026&tag=aitoolsdail03-20) — How to use AI tools for competitive advantage
+- [**Co-Intelligence: Living and Working with AI**](https://www.amazon.com/Co-Intelligence-Living-Working-AI/dp/059371671X?tag=aitoolsdail03-20) — Practical guide to working with AI ($13.99, 4.7 stars)
+- [**Artificial Intelligence For Dummies**](https://www.amazon.com/Artificial-Intelligence-Dummies-Computer-Tech/dp/1394270712?tag=aitoolsdail03-20) — The #1 bestselling AI book ($9.99, 4.3 stars)
+- [**Writing AI Prompts For Dummies**](https://www.amazon.com/Writing-Prompts-Dummies-Computer-tech/dp/1394244665?tag=aitoolsdail03-20) — Master prompt engineering for ChatGPT, Claude, and Gemini ($15.00, 4.4 stars)
 
 ---
 

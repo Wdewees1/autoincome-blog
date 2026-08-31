@@ -102,9 +102,9 @@ Ready to leverage AI for productivity? Start with a free trial of any of the too
 ### Recommended Resources:
 
 - [**Jasper AI — Try Jasper Free**](https://www.jasper.ai/?fpr=aitoolsdaily) — Start your free trial of the AI marketing tool we reviewed above
-- [**AI for Beginners Book**](https://www.amazon.com/s?k=AI+for+beginners+book&tag=aitoolsdail03-20) — Learn the fundamentals of AI in plain English
-- [**The AI Advantage Book**](https://www.amazon.com/s?k=artificial+intelligence+business+book+2026&tag=aitoolsdail03-20) — How businesses are using AI to gain a competitive edge
-- [**ChatGPT for Business Book**](https://www.amazon.com/s?k=chatgpt+for+business+book&tag=aitoolsdail03-20) — Practical guide to using ChatGPT in your workflow
+- [**Artificial Intelligence For Dummies**](https://www.amazon.com/Artificial-Intelligence-Dummies-Computer-Tech/dp/1394270712?tag=aitoolsdail03-20) — The #1 bestselling AI book ($9.99, 4.3 stars)
+- [**Co-Intelligence: Living and Working with AI**](https://www.amazon.com/Co-Intelligence-Living-Working-AI/dp/059371671X?tag=aitoolsdail03-20) — Practical guide to collaborating with AI ($13.99, 4.7 stars)
+- [**Writing AI Prompts For Dummies**](https://www.amazon.com/Writing-Prompts-Dummies-Computer-tech/dp/1394244665?tag=aitoolsdail03-20) — Master prompt engineering for any AI tool ($15.00, 4.4 stars)
 
 ---
 

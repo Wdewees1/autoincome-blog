@@ -70,12 +70,14 @@ Zapier's AI features let you automate workflows across thousands of apps using n
 
 ## Recommended Books for Going Deeper
 
-Want to go deeper on AI and productivity? Here are some highly-rated books:
+Want to go deeper on AI and productivity? Here are the top-selling books on Amazon right now:
 
-- [**AI for Beginners: A Simple Guide to Understanding Artificial Intelligence**](https://www.amazon.com/s?k=AI+for+beginners+book&tag=aitoolsdail03-20) — Perfect starting point for understanding AI fundamentals
-- [**The Productivity Project**](https://www.amazon.com/s?k=productivity+project+book&tag=aitoolsdail03-20) — Proven strategies for working smarter, not harder
-- [**Deep Work: Rules for Focused Success in a Distracted World**](https://www.amazon.com/s?k=deep+work+cal+newport&tag=aitoolsdail03-20) — Master the art of focus in the age of AI
-- [**Artificial Intelligence: A Guide for Beginners**](https://www.amazon.com/s?k=artificial+intelligence+guide+beginners&tag=aitoolsdail03-20) — Comprehensive AI overview for non-technical readers
+- [**Artificial Intelligence For Dummies**](https://www.amazon.com/Artificial-Intelligence-Dummies-Computer-Tech/dp/1394270712?tag=aitoolsdail03-20) — The #1 bestselling AI book. Perfect starting point for understanding AI fundamentals ($9.99, 4.3 stars)
+- [**Co-Intelligence: Living and Working with AI**](https://www.amazon.com/Co-Intelligence-Living-Working-AI/dp/059371671X?tag=aitoolsdail03-20) — Wharton professor Ethan Mollick's practical guide to collaborating with AI ($13.99, 4.7 stars)
+- [**The Nvidia Way: Jensen Huang and the Making of a Tech Giant**](https://www.amazon.com/Nvidia-Way-Jensen-Huang-Making/dp/1324086718?tag=aitoolsdail03-20) — The story behind the AI chip company powering the revolution ($12.43, 4.6 stars)
+- [**Writing AI Prompts For Dummies**](https://www.amazon.com/Writing-Prompts-Dummies-Computer-tech/dp/1394244665?tag=aitoolsdail03-20) — Master prompt engineering for ChatGPT, Claude, and more ($15.00, 4.4 stars)
+- [**Deep Work: Rules for Focused Success in a Distracted World**](https://www.amazon.com/Deep-Work-Cal-Newport-audiobook/dp/B0189PVAWY?tag=aitoolsdail03-20) — Cal Newport's classic on focus in the age of distraction ($9.99, 4.7 stars)
+- [**Four Thousand Weeks: Time Management for Mortals**](https://www.amazon.com/Four-Thousand-Weeks-Management-Mortals/dp/1250849357?tag=aitoolsdail03-20) — The #1 time management bestseller ($10.01, 4.5 stars)
 
 ## How to Choose the Right AI Tool
 

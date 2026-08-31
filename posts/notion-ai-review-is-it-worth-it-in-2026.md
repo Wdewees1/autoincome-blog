@@ -102,9 +102,9 @@ Ready to leverage AI for productivity? Start with a free trial of any of the too
 ### Recommended Resources:
 
 - [**Notion — Try Notion Free**](https://www.notion.so/?af=aitoolsdaily) — Start your free workspace with Notion AI
-- [**Building a Second Brain Book**](https://www.amazon.com/s?k=building+a+second+brain+tiago+forte&tag=aitoolsdail03-20) — The productivity system that pairs perfectly with Notion
-- [**The Productivity Project Book**](https://www.amazon.com/s?k=productivity+project+chris+bailey&tag=aitoolsdail03-20) — Master your time and attention
-- [**AI for Beginners Book**](https://www.amazon.com/s?k=AI+for+beginners+book&tag=aitoolsdail03-20) — Understand the AI tools transforming productivity
+- [**Building a Second Brain**](https://www.amazon.com/Building-Second-Brain-Tiago-Forte/dp/1500176967?tag=aitoolsdail03-20) — The productivity system that pairs perfectly with Notion ($14.99, 4.5 stars)
+- [**Four Thousand Weeks: Time Management for Mortals**](https://www.amazon.com/Four-Thousand-Weeks-Management-Mortals/dp/1250849357?tag=aitoolsdail03-20) — The #1 time management bestseller ($10.01, 4.5 stars)
+- [**Co-Intelligence: Living and Working with AI**](https://www.amazon.com/Co-Intelligence-Living-Working-AI/dp/059371671X?tag=aitoolsdail03-20) — Practical guide to working with AI tools ($13.99, 4.7 stars)
 
 ---
 
