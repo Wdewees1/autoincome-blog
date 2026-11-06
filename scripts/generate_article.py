@@ -14,10 +14,12 @@ It generates a new article by:
 import os
 import sys
 import random
+import json
+import subprocess
 import datetime
 from pathlib import Path
 
-BASE_DIR = Path("/opt/data/autoincome-blog")
+BASE_DIR = Path(__file__).resolve().parent.parent
 POSTS_DIR = BASE_DIR / "posts"
 
 # ─── Topic pool (rotates to avoid repetition) ─────────────────────────────────
@@ -324,7 +326,7 @@ def main():
 
     # Rebuild the site
     print("🔨 Rebuilding site...")
-    os.system(f"cd {BASE_DIR} && python3 build_site.py")
+    subprocess.run([sys.executable, str(BASE_DIR / "build_site.py")], cwd=str(BASE_DIR))
     print("✨ Done!")
 
     return slug

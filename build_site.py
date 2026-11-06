@@ -12,7 +12,7 @@ import html
 import datetime
 from pathlib import Path
 
-BASE_DIR = Path("/opt/data/autoincome-blog")
+BASE_DIR = Path(__file__).resolve().parent
 POSTS_DIR = BASE_DIR / "posts"
 OUTPUT_DIR = BASE_DIR / "output"
 STATIC_DIR = BASE_DIR / "static"
@@ -23,7 +23,7 @@ CONFIG_PATH = BASE_DIR / "config.json"
 DEFAULT_CONFIG = {
     "site_name": "AI Tools Daily",
     "site_tagline": "Your daily source for AI tools, reviews, and tutorials",
-    "site_url": "https://yourusername.github.io/autoincome-blog",
+    "site_url": "https://wdewees1.github.io/autoincome-blog",
     "site_description": "Discover the best AI tools, tutorials, and reviews updated daily. Stay ahead of the AI revolution.",
     "site_author": "AI Tools Daily",
     "social_twitter": "@aitoolsdaily",
@@ -31,11 +31,11 @@ DEFAULT_CONFIG = {
     "posts_per_page": 10,
     "footer_text": "© 2026 AI Tools Daily. All rights reserved.",
     "nav_links": [
-        {"label": "Home", "url": "/"},
-        {"label": "AI Tools", "url": "/category/ai-tools.html"},
-        {"label": "Tutorials", "url": "/category/tutorials.html"},
-        {"label": "Reviews", "url": "/category/reviews.html"},
-        {"label": "News", "url": "/category/news.html"},
+        {"label": "Home", "url": "/autoincome-blog/"},
+        {"label": "AI Tools", "url": "/autoincome-blog/category/ai-tools.html"},
+        {"label": "Tutorials", "url": "/autoincome-blog/category/tutorials.html"},
+        {"label": "Reviews", "url": "/autoincome-blog/category/reviews.html"},
+        {"label": "News", "url": "/autoincome-blog/category/news.html"},
     ],
 }
 
@@ -109,7 +109,8 @@ def md_to_html(text):
                 close_lists()
                 html_lines.append("<ol>")
                 in_ol = True
-            html_lines.append(f"<li>{inline_md(re.sub(r'^\d+\. ', '', stripped))}</li>")
+            cleaned = re.sub(r'^\d+\. ', '', stripped)
+            html_lines.append(f"<li>{inline_md(cleaned)}</li>")
         else:
             close_lists()
             if not in_paragraph:
@@ -226,9 +227,14 @@ def render_head(title, description, canonical="", extra=""):
     <meta name="twitter:description" content="{html.escape(description)}">
     <meta name="twitter:site" content="{CONFIG['social_twitter']}">
     <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="{html.escape(CONFIG['site_name'])}" href="/feed.xml">
-    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <link rel="alternate" type="application/rss+xml" title="{html.escape(CONFIG['site_name'])}" href="/autoincome-blog/feed.xml">
+    <link rel="sitemap" type="application/xml" href="/autoincome-blog/sitemap.xml">
+    <!-- Google Search Console verification -->
+    <meta name="google-site-verification" content="z5byM4gOawbJ9JXt36cq3WpVtEqecvNvAierEkCSgGU" />
     {extra}
+    <!-- Analytics -->
+    <script data-goatcounter="https://aitoolsdaily.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
     <style>{get_css()}</style>
 </head>"""
 
@@ -240,7 +246,7 @@ def render_nav():
     return f"""<header class="site-header">
     <div class="container">
         <div class="header-inner">
-            <a href="/" class="logo">
+            <a href="/autoincome-blog/" class="logo">
                 <span class="logo-icon">🤖</span>
                 <span class="logo-text">{html.escape(CONFIG['site_name'])}</span>
             </a>
@@ -267,7 +273,7 @@ def render_footer():
             </div>
             <div class="footer-col">
                 <h4>Stay Updated</h4>
-                <p>Subscribe via <a href="/feed.xml">RSS</a></p>
+                <p>Subscribe via <a href="/autoincome-blog/feed.xml">RSS</a></p>
                 <p class="footer-text">{html.escape(CONFIG['footer_text'])}</p>
             </div>
         </div>
@@ -381,7 +387,7 @@ def generate_homepage(posts, page=1):
         cards += f"""<article class="post-card">
     <div class="post-card-content">
         <span class="post-card-category">{html.escape(category)}</span>
-        <h2 class="post-card-title"><a href="/posts/{post['slug']}.html">{html.escape(post.get('title', 'Untitled'))}</a></h2>
+        <h2 class="post-card-title"><a href="/autoincome-blog/posts/{post['slug']}.html">{html.escape(post.get('title', 'Untitled'))}</a></h2>
         <p class="post-card-excerpt">{html.escape(post['excerpt'])}</p>
         <div class="post-card-meta">
             <span>📅 {post['date_display']}</span>
@@ -397,9 +403,9 @@ def generate_homepage(posts, page=1):
             if i == page:
                 pagination += f'<span class="current">{i}</span>'
             elif i == 1:
-                pagination += f'<a href="/index.html">{i}</a>'
+                pagination += f'<a href="/autoincome-blog/index.html">{i}</a>'
             else:
-                pagination += f'<a href="/page/{i}.html">{i}</a>'
+                pagination += f'<a href="/autoincome-blog/page/{i}.html">{i}</a>'
         pagination += "</div>"
 
     content = f"""<section class="hero">
@@ -467,7 +473,7 @@ def generate_category_page(category, posts):
         cards += f"""<article class="post-card">
     <div class="post-card-content">
         <span class="post-card-category">{html.escape(post.get('category', 'General'))}</span>
-        <h2 class="post-card-title"><a href="/posts/{post['slug']}.html">{html.escape(post.get('title', 'Untitled'))}</a></h2>
+        <h2 class="post-card-title"><a href="/autoincome-blog/posts/{post['slug']}.html">{html.escape(post.get('title', 'Untitled'))}</a></h2>
         <p class="post-card-excerpt">{html.escape(post['excerpt'])}</p>
         <div class="post-card-meta"><span>📅 {post['date_display']}</span></div>
     </div>
